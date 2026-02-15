@@ -11,6 +11,7 @@ CalDialog::CalDialog(QWidget *parent)
     ui->m_LineEdit_OP1->setValidator(new QDoubleValidator(this));
     ui->m_LineEdit_OP2->setValidator(new QDoubleValidator(this));
     ui->pushButton->setDisabled(1);
+
     //手动建立信号和槽的关系
     QObject::connect(ui->m_LineEdit_OP1,SIGNAL(textChanged(QString)),this,SLOT(enableButton()));
     QObject::connect(ui->m_LineEdit_OP2,SIGNAL(textChanged(QString)),this,SLOT(enableButton()));
