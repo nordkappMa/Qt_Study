@@ -10,10 +10,14 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    animal.cpp
+    animal.cpp \
+    student.cpp \
+    teacher.cpp
 
 HEADERS += \
-    animal.h
+    animal.h \
+    student.h \
+    teacher.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
